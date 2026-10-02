@@ -68,4 +68,7 @@ npm run build
 - 字段、状态、动作与流转目标集中在 `frontend/src/data/modules.ts`；示例数据在
   `frontend/src/data/seed.ts`。
 - 状态流转只允许在 `local-service.ts` 里改，页面组件不做业务判断。
+- 遗迹单位的批量提交清理、逐条校验、环节单向流转、归位落验收台账等专属逻辑集中在
+  `frontend/src/api/feature-service.ts`；清单（`/feature`）与详情（`/feature/:id`）读同一份数据，
+  筛选条件挂在地址栏上，详情页退回列表时条件不丢。
 - 想回到初始数据：清掉浏览器里 `archaeology-field:entries` 这一项，或调用 `resetModule(模块)`。
