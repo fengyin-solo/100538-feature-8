@@ -35,3 +35,32 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.col-check { width: 36px; text-align: center; }
+.col-check input { cursor: pointer; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.ok-text { color: #067647; }
+.missing-tag { display: inline-block; color: #b42318; background: #fef3f2; border: 1px solid #fda29b; border-radius: 4px; padding: 0 6px; font-size: 12px; }
+.batch-hint { font-size: 12px; color: var(--muted); margin: 8px 0; }
+.result-panel { margin-top: 14px; border: 1px solid var(--border); border-radius: 8px; background: #fff; padding: 10px 12px; }
+.result-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; font-size: 13px; }
+.result-table { border-radius: 6px; }
+.row-ok td { background: #f6fef9; }
+.row-bad td { background: #fff7f6; }
+.tag { display: inline-block; border-radius: 999px; padding: 1px 10px; font-size: 12px; }
+.tag-ok { color: #067647; background: #d1fadf; }
+.tag-bad { color: #b42318; background: #fee4e2; }
+.tag-skip { color: #b54708; background: #fef0c7; }
+.detail-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; }
+.detail-title { display: flex; align-items: center; gap: 12px; }
+.detail-title h3 { margin: 0; }
+.status-badge { background: #eef2f7; border-radius: 999px; padding: 2px 12px; font-size: 12px; color: var(--muted); }
+.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; margin: 14px 0; }
+.detail-item dt { font-size: 12px; color: var(--muted); }
+.detail-item dd { margin: 2px 0 0; font-size: 14px; }
+.detail-flow { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.flow-step { border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px; font-size: 13px; color: var(--muted); }
+.flow-step.done { background: #ecfdf3; border-color: #6ce9a6; color: #067647; }
+.flow-step.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+.flow-arrow { color: var(--muted); }
+.detail-actions { display: flex; gap: 10px; margin-top: 12px; }
+.detail-note { font-size: 12px; color: var(--muted); margin-bottom: 0; }
